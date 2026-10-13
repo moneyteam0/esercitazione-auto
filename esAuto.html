@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+        label {
+            display: inline-block;
+            width: 190px;
+        }
+
+
+        td {
+            vertical-align: top;
+        }
+    </style>
+
+
+    <form action="auto.php" method="post">
+
+
+        <h2 align="center">----------- Inserimento Auto ------------</h2>
+        <table>
+
+
+            <tr>
+                <td style="background-color: rgb(188, 32, 255);">
+                <label for="marca">Marca</label>
+                </td>
+                <td>
+                    <select name="marca" id="marca">
+                        <option value="Alfa Romeo">Alfa Romeo</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Tesla">Tesla</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(188, 32, 255);">
+                <label for="modello">Modello</label>
+                </td>
+                <td>
+                    <input type="text" name="modello" style="width: 150%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(188, 32, 255);">
+                <label for="stato">Stato</label>
+                </td>
+                <td>
+                    <input type="radio" name="stato" value="Nuova"> Nuova
+                    <input type="radio" name="stato" value="Usata"> Usata
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(188, 32, 255);">
+                <label for="anno">Anno Costruzione</label>
+                </td>
+                <td>
+                    <select name="anno" id="anno">
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(188, 32, 255);">
+                <label for="cilindrata">Cilindrata</label>
+                </td>
+                <td>
+                    <input type="text" name="cilindrata" style="width: 50%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(188, 32, 255);">
+                <label for="cavalli">Cavalli</label>
+                </td>
+                <td>
+                    <input type="text" name="cavalli" style="width: 50%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(188, 32, 255);">
+                <label for="prezzo">Prezzo</label>
+                </td>
+                <td>
+                    <input type="text" name="prezzo" style="width: 75%;">Euro
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(188, 32, 255);">
+                <label for="targa">Targa</label>
+                </td>
+                <td>
+                    <input type="text" name="targa" style="width: 100%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(188, 32, 255); ">
+                <label for="accessori">Accessori</label>
+                </td>
+                <td>
+                    <input type="checkbox" value="aria"> Aria condizionata <br>
+                    <input type="checkbox" value="vernice"> Vernice Metalizzata <br>
+                    <input type="checkbox" value="tetto"> Tetto in Cristallo <br>
+                    <input type="checkbox" value="impianto"> Impianto Radio-CD <br>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(188, 32, 255);">
+                <label for="descrizione">Descrizione Aggiuntiva</label>
+                </td>
+                <td>
+                    <textarea name="descrizione" value="descrizione" id="descrizione" style="height: 100px; width: 180%;" ></textarea>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Invia">
+        <input type="reset" value="Cancella">
+    </form>
+</body>
+</html>
